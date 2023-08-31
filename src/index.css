@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #030408;
+  @apply text-white;
+}
+
+.hero-gradient-text {
+  background: linear-gradient(180deg, #fff 0%, #00152e 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-secondary-text {
+  color: #b5abcf;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  letter-spacing: 2px;
+
+  font-style: normal;
+  font-weight: 200;
+  line-height: 173.5%; /* 43.726px */
+}
+
+.quote-text {
+  color: #999;
+  font-family: Plus Jakarta Sans;
+
+  font-style: normal;
+  font-weight: 300;
+  line-height: 166.6%; /* 63.308px */
+}
+.hero-gradient {
+  /* global 92%+ browsers support */
+  /* background: radial-gradient(circle at 0% 100%, #4847ab 0%, #3bb3ff00 27%); */
+  /* background: radial-gradient(
+    circle at 0% 100%,
+    #4847ab4f 0%,
+    #2196f34f 10%,
+    #3bb3ff00 20%
+  ); */
+  background: radial-gradient(circle at 0% 0%, #2196f363 0%, #3bb3ff00 28%);
+}
